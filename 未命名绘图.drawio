@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-11T16:28:44.962Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="SU1lssmr8qITyXVpwadm" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-11T16:37:04.781Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="uUOXFyLEYX12Wed6qgXD" version="21.6.8" type="github">
   <diagram name="第 1 页" id="vbbRplhO5rjdBHYVbgLp">
-    <mxGraphModel dx="814" dy="421" grid="1" gridSize="7" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="12000" pageHeight="12000" math="0" shadow="1">
+    <mxGraphModel dx="1436" dy="742" grid="1" gridSize="7" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="12000" pageHeight="12000" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -64,6 +64,9 @@
         <mxCell id="msYl1upBDC3CMJgV2yu4-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-9" target="msYl1upBDC3CMJgV2yu4-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-9" target="msYl1upBDC3CMJgV2yu4-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="msYl1upBDC3CMJgV2yu4-9" value="&lt;div&gt;RGWRados::get_bucket_info&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="798" y="304" width="196" height="32" as="geometry" />
         </mxCell>
@@ -73,8 +76,64 @@
         <mxCell id="msYl1upBDC3CMJgV2yu4-11" value="&lt;div&gt;_get_bucket_info&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1074" y="304" width="196" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="msYl1upBDC3CMJgV2yu4-13" value="get_bucket_meta_oid(entry_point.bucket, oid);&lt;br&gt;构建 meta对象的前缀" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1350" y="304" width="281" height="39" as="geometry" />
+        <mxCell id="msYl1upBDC3CMJgV2yu4-13" value="get_bucket_meta_oid(entry_point.bucket, oid);&lt;br&gt;构建 meta对象的前缀&lt;br&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;.bucket.meta.[bucketname]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1365" y="290" width="288" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-17" target="msYl1upBDC3CMJgV2yu4-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-17" value="&lt;div&gt;&amp;nbsp;store-&amp;gt;create_bucket&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="798" y="416" width="196" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-21" target="msYl1upBDC3CMJgV2yu4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-21" value="&lt;div&gt;create_bucket_id(&amp;amp;bucket.marker);&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1074" y="416" width="196" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-23" target="msYl1upBDC3CMJgV2yu4-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1350" y="490" as="sourcePoint" />
+            <mxPoint x="912.5" y="597" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-23" value="&amp;nbsp;put_linked_bucket_info &amp;nbsp;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="416" width="196" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-25" target="msYl1upBDC3CMJgV2yu4-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-25" value="RGWRados::put_bucket_entrypoint_info&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="791" y="505" width="243" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-27" target="msYl1upBDC3CMJgV2yu4-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-27" value="rgw_bucket_store_info&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1114" y="505" width="243" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="msYl1upBDC3CMJgV2yu4-29" target="msYl1upBDC3CMJgV2yu4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-29" value="store-&amp;gt;meta_mgr-&amp;gt;put_entry&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1437" y="505" width="243" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="msYl1upBDC3CMJgV2yu4-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1869" y="537.0000000000002" as="sourcePoint" />
+            <mxPoint x="1169" y="660" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1869" y="563" />
+              <mxPoint x="1750" y="563" />
+              <mxPoint x="1750" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-31" value="构造一个 完整的　ｏｉｄ&amp;nbsp;&amp;nbsp;&lt;br&gt;handler-&amp;gt;get_pool_and_oid(store, key, pool, oid);&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="500" width="270" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="msYl1upBDC3CMJgV2yu4-33" value="rgw_put_system_obj　&lt;br&gt;通用流程&lt;br&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1615" y="707" width="270" height="42" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
